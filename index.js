@@ -28,6 +28,7 @@ function takkeListe() {
         if (thisMinute > lastMinute) {
             lastMinute = thisMinute
             console.log("A minute has passed "); 
+            location.reload();
         }
       }, 1000); 
     
