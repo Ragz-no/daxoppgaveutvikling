@@ -22,7 +22,7 @@ function takkeListe() {
      let lastMinute = new Date().getMinutes();
      let thisMinute = new Date().getMinutes();
 
-     document.getElementById("seconds").innerText = "Dette er ditt lykketall dette minuttet: " + JSON.stringify(thisMinute);
+     document.getElementById("minutes").innerText = "Dette er ditt lykketall dette minuttet: " + JSON.stringify(thisMinute);
       setInterval(_=>{ 
         thisMinute = new Date().getMinutes();
         if (thisMinute > lastMinute) {
