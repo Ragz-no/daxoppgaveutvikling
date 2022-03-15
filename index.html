@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--responsive, tittel-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,22 +14,35 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="style.css">
+    
+     
 </head>
 <body>
+    <!--Tittelen på nettsiden-->
+    <section class="welcome">
+    <h1>Vilkommen til denna nettsiden!</h1>
+    </section>
 
-    <h1>Please enter your name:</h1>
+    <!--seksjonen handler om user input altså bruker kan skrive inn hva som helst-->
+    <section class="inputUser">
+    <h1 id="minutes"></h1>
+    <h3>Please enter your name:</h3>
 
     <form>
         <input id="inputText" type="text" placeholder="enter name">
-        <button class="btn" type="button" onclick="daxOppgave()">Lagre</button>
+        <button type="button" class="btn" onclick="daxOppgave();">Lagre</button>
         <p id="velkomtekst"></p>
     </form>
+    </section>
 
-    <p id="besøkliste"></p>
-    <p id="minutes"></p>
+   <!--besøksliste aka folk som har vært på nettsiden og skrivet noe i input field-->
+    <section class="liste">
+        <h3 id="besøksliste-tittel">Besøkende på denna nettsiden:</h3>
+        <p id="besøkliste"></p>
+    </section>
+        
 
-
-    <script src="index.js"></script>    
-    
+ 
+    <script type="text/javascript" src="index.js"  defer></script>  
 </body>
 </html> 
