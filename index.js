@@ -1,22 +1,38 @@
-// Set Item
+//sjekk application for localstorage F12
 
-localStorage.setItem("inputText", "velkomtekst");
+// Store
+var besøker = JSON.parse(localStorage.getItem("besøkliste") || "[]" )
+
 
 // Retrieve
 
 function daxOppgave() {
-    document.getElementById("velkomtekst").innerHTML = localStorage.getItem("inputText");
-    document.getElementById("velkomtekst").innerHTML = "Velkommen, vi ønsker deg alt godt " 
-    + document.getElementById("inputText").value + "!";
-    document.getElementById("inputText").value="";
+  // document.getElementById("velkomtekst").innerHTML = "Velkommen, vi ønsker deg alt godt " 
+  // + document.getElementById("inputText").value + "!";
 
+  besøker.push(document.getElementById("inputText").value)
+
+  localStorage.setItem("besøkliste", JSON.stringify(besøker))
+
+  document.getElementById("velkomtekst").innerHTML = "Velkommen, vi ønsker deg alt godt " 
++ besøker.at(-1) + "!"
+
+  takkeListe();
 }
 
+// for localstorage og websiden
+
+// document.getElementById("velkomtekst").innerHTML = "Velkommen, vi ønsker deg alt godt " 
+// + besøker.at(-1) + "!"
+  
+//for localstorage
 function takkeListe() {
-   document.getElementById("besøkliste").innerHTML = "Takk til disse folka";
+  document.getElementById("besøkliste").innerHTML = besøker.join("<br>");
 }
 
-      // oppdateres seg hvert minutt 
+takkeListe();
+
+      // oppdateres seg hvert minutt med random tall
   
      let randomNumber = Math.ceil(Math.random() * 120);
      let lastMinute = new Date().getMinutes();
@@ -44,5 +60,5 @@ function takkeListe() {
 
 // function daxOppgave_1() {
 //     if (document.getElementById("inputText").value == "")
-//     {document.getElementById("feilmelding").innerHTML = "Du må skrive over her"}
+//     {document.getElementById("feilmelding_inputTekst").innerHTML = "Du må skrive over her"}
 // }
