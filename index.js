@@ -14,7 +14,7 @@ function daxOppgave() {
 
   localStorage.setItem("besøkliste", JSON.stringify(besøker))
 
-  document.getElementById("velkomtekst").innerHTML = "Velkommen, vi ønsker deg alt godt " 
+  document.getElementById("test").innerHTML = "Velkommen, vi ønsker deg alt godt " 
 + besøker.at(-1) + "!"
 
   takkeListe();
@@ -22,8 +22,12 @@ function daxOppgave() {
 
 // for localstorage og websiden
 
-// document.getElementById("velkomtekst").innerHTML = "Velkommen, vi ønsker deg alt godt " 
-// + besøker.at(-1) + "!"
+
+ document.getElementById("inputText").addEventListener("keyup", function(event){
+  if (event.key === "Enter") {
+    event.preventDefault();
+  }
+ });
   
 //for localstorage
 function takkeListe() {
