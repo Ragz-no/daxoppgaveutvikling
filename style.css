@@ -1,11 +1,18 @@
 body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
+    background: #6EDCD9;
+    color: rgb(218, 20, 20);
 }
 
 h1 {
     font-size: 1.25rem;
 }
+
+p {
+    font-weight: 600;
+}
+
 
 /*for seksjonen inputUser*/
 .inputUser {
@@ -15,21 +22,34 @@ h1 {
 input {
     border-radius: 12px;
     height: 25px;
+    box-shadow: 10px 5px 10px 5px gray;
+}
+
+input[type=text], select { 
+    width: 20%;
 }
 
 #minutes {
     margin-bottom: 120px;
     font-size: 5rem;
+    font-weight: 900;
 }
 
 .btn {
     border-radius: 12px;
     height: 28px;
   }
+
+.btn:hover {
+    cursor: pointer;
+}
   
 /*for liste seksjonen*/
 #besøksliste-tittel {
     margin-top: 100px;
 }
 
+#besøklite {
+    list-style: armenian;
+}
   
