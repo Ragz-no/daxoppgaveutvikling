@@ -10,18 +10,18 @@
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap" rel="stylesheet">
 
     <!--CSS-->
     <link rel="stylesheet" href="style.css">
     
      <!--JS-->
-     <script type="text/javascript" src="index.js"  defer></script>
+     <script type="text/javascript" src="index.js"  defer></script>  
 </head>
 <body>
     <!--Tittelen på nettsiden-->
     <section class="welcome">
-    <h1>Vilkommen til denna nettsiden!</h1>
+    <h1 id="test">Vilkommen til denna nettsiden!</h1>
     </section>
 
     <!--seksjonen handler om user input altså bruker kan skrive inn hva som helst-->
@@ -30,7 +30,7 @@
     <h3>Please enter your name:</h3>
 
     <form>
-        <input id="inputText" type="text" placeholder="enter name">
+        <input id="inputText" type="text" placeholder="enter name here and press Lagre">
         <button type="button" class="btn" onclick="daxOppgave()">Lagre</button>
         <p id="velkomtekst"></p>
     </form>
@@ -38,12 +38,12 @@
 
    <!--besøksliste aka folk som har vært på nettsiden og skrivet noe i input field-->
     <section class="liste">
-        <h3 id="besøksliste-tittel">Takker til dissa besøkande:</h3>
+        <h3 id="besøksliste-tittel">Besøkende på denna nettsiden:</h3>
         <p id="besøkliste"></p>
     </section>
         
 
  
-      
+    
 </body>
 </html> 
