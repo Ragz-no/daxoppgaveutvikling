@@ -16,7 +16,7 @@ RNG hvert minutt = fikset
 
 ### TO DO
 
-Sessionstorage
+All done tror jeg 
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
