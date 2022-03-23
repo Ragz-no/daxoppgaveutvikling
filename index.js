@@ -14,8 +14,8 @@ function daxOppgave() {
 
   localStorage.setItem("besøkliste", JSON.stringify(besøker))
 
-  document.getElementById("test").innerHTML = "Velkommen, vi ønsker deg alt godt " 
-+ besøker.at(-1) + "!"
+  document.getElementById("Velkommen").innerHTML = "Velkommen, vi ønsker deg alt godt " 
++ besøker.at(-1) + "!";
 
   takkeListe();
 }

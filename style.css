@@ -2,7 +2,6 @@ body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     background: #6EDCD9;
-    color: rgb(218, 20, 20);
 }
 
 h1 {
@@ -13,6 +12,9 @@ p {
     font-weight: 600;
 }
 
+#test {
+    
+}
 
 /*for seksjonen inputUser*/
 .inputUser {
@@ -23,11 +25,9 @@ input {
     border-radius: 12px;
     height: 25px;
     box-shadow: 10px 5px 10px 5px gray;
-}
-
-input[type=text], select { 
     width: 20%;
 }
+
 
 #minutes {
     margin-bottom: 120px;
