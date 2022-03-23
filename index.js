@@ -22,6 +22,10 @@ function daxOppgave() {
 
 // for localstorage og websiden
 
+document.querySelector("form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  daxOppgave();
+});
 
 //for localstorage
 function takkeListe() {
