@@ -23,12 +23,6 @@ function daxOppgave() {
 // for localstorage og websiden
 
 
- document.getElementById("inputText").addEventListener("keyup", function(event){
-  if (event.key === "Enter") {
-    event.preventDefault();
-  }
- });
-  
 //for localstorage
 function takkeListe() {
   document.getElementById("besøkliste").innerHTML = besøker.join("<br>");
